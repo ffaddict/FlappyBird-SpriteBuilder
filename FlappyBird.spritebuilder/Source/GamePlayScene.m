@@ -15,7 +15,7 @@
 {
     // put update code here
     // Increment the time since the last obstacle was added
-    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
+    timeSinceObstacle += 1; // delta is approximately 1/60th of a second
     
     // Check to see if two seconds have passed
     if (timeSinceObstacle > 2.0f)
@@ -33,7 +33,7 @@
     // this will get called every time the player touches the screen
     [character flap];
     timeSinceObstacle = 0.0f;
-    //[self addObstacle];
+    [self addObstacle];
 }
 
 @end
